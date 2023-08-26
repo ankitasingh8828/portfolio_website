@@ -1,0 +1,369 @@
+*{padding: 0; margin: 0; box-sizing: border-box;}
+/*font-family: 'Poppins', sans-serif;*/
+/*font-family: 'Kalam', cursive;*/
+
+header{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.9)),
+                url('bg.jpg');
+                background-size: cover;
+                color: white;
+}
+
+nav{
+    width: 100%;
+    height: 100px; 
+  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0 70px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.logo{
+    font-size: 2em;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+.menu a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.2em;
+    padding: 0.5rem 1rem;
+}
+
+.menu a:nth-child(5){
+    background: #6ab04c;
+    border-radius: 8px;
+    margin: 0 1rem;
+}
+
+.menu a:hover{
+    background: #6ab04c;
+    border-radius: 8px;
+}
+
+.container{
+   width: 100%;
+   height: 100%;
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   flex-wrap: wrap;
+   padding: 0 70px;
+   
+}
+.container img{
+  border-radius: 200px;
+}
+.left{
+    flex-basis: 60%;
+}
+.right{
+    flex-basis: 30%;  
+}
+
+.left h2{
+    font-family: 'Poppins', sans-serif;
+    color: #6ab04c;
+}
+.left h1{
+  font-family: 'Kalam', cursive;
+  font-size: 5em;  
+}
+.left p{
+    font-family: 'Poppins', sans-serif;
+    line-height: 2.5rem; 
+}
+
+#hire{
+    text-decoration: none;
+    background: #6ab04c;
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    font-size: 1.5rem;
+    margin: 0 1rem;
+}
+#myp{
+    text-decoration: none;
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    border: 1px dashed white;
+    font-size: 1.5rem;
+    margin: 0 1rem;
+}
+
+/* ////........About Me........//// */
+
+
+.about-me {
+    background-color: white;
+    padding: 6rem 0;
+  }
+  .about-me .about-heading {
+    color: black;
+    font-size: 2rem;
+    font-weight: 600;
+    text-align: center;
+  }
+  .about-content p {
+    font-size: 1.5rem;
+    color: green;
+    padding: 0 2.3rem;
+    text-align: center;
+  }
+  .skills .skills-heading {
+    font-size: 2rem;
+    font-weight: 600;
+    color: black;
+    text-align: center;
+  }
+  .about-me .about-content {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .about-content .left-content {
+    flex-basis: 45%;
+    text-align: center;
+  }
+  .about-content .right-content {
+    flex-basis: 45%;
+  }
+  
+  
+  /* ///.....Skill Bar....../// */
+  
+  .skills-bar {
+    padding: 25px 30px;
+  }
+  .skills-bar .bar {
+    margin: 25px 0;
+  }
+  .skills-bar .bar .info span {
+    font-size: 1rem;
+    font-weight: 500;
+  }
+  .skills-bar .bar .info {
+    margin-bottom: 8px;
+    color: green;
+  }
+  .skills-bar .bar .progress-line {
+    position: relative;
+    height: 10px;
+    width: 550px;
+    background: skyblue;
+    border-radius: 10px;
+    transform: scaleX(0);
+    transform-origin: left;
+    animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+  }
+  .bar .progress-line span {
+    position: absolute;
+    background: black;
+    height: 100%;
+    border-radius: 10px;
+    transform: scaleX(0);
+    transform-origin: left;
+    animation: animate 1s 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+  }
+  @keyframes animate {
+    100% {
+      transform: scaleX(1);
+    }
+  }
+  .progress-line .html {
+    width: 80%;
+  }
+  .progress-line .css {
+    width: 70%;
+  }
+  .progress-line .java {
+    width: 65%;
+  }
+  .progress-line .javascript {
+    width: 50%;
+  }
+  .progress-line .c {
+    width: 50%;
+  }
+  
+  .bar .progress-line span::before {
+    position: absolute;
+    content: "";
+    height: 0;
+    right: 0;
+    top: -12px;
+    width: 0;
+    border: 7px solid transparent;
+    border-bottom-width: 0px;
+    border-right-width: 0px;
+    border-top-style: #f0f0f0;
+    border-top-color: green;
+  }
+  
+  .bar .progress-line span::after {
+    position: absolute;
+    right: 0;
+    top: -28px;
+    color: #07374a;
+    font-size: 12px;
+    font-weight: 700;
+    background: green;
+    padding: 1px 8px;
+    border-radius: 3px;
+  }
+   
+  .progress-line .html::after {
+    content: "80%";
+  }
+  .progress-line .css::after {
+    content: "70%";
+  }
+  .progress-line .java::after {
+    content: "65%";
+  }
+  .progress-line .javascript::after {
+    content: "50%";
+  }
+  .progress-line .c::after {
+    content: "50%";
+  }
+  
+  .navbar.solid {
+    background-color: #07374a;
+    transition: background-color 1s ease 0s;
+    box-shadow: 0 0 4px rgb(7 55 74 / 20%);
+    z-index: 500;
+  }
+  
+  .navbar.solid .navbar-brand {
+    display: inline-block;
+    color: #f0f0e6;
+    transition: color 1s ease 0s;
+  }
+  
+  .navbar-brand {
+    display: none;
+    color: #f0f0e6;
+    font-weight: 400;
+  }
+  
+ /* service  */
+ #services{
+    padding: 50px 70px;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.2);
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+ }
+
+ .intro h1{
+    font-size: 3rem;
+ }
+ .card{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 3rem;
+ }
+.cardbody{
+    flex-basis: 30%;
+    background: white;
+    padding: 1rem;
+    border-radius: 8px;  
+    margin: 0.5rem 0;
+}
+.cardbody h3{
+    font-size: 1.5rem;
+    margin: 0.5rem 0;
+}
+.cardbody i{
+    font-size: 2.5rem;
+    color: #6ab04c;
+}
+
+#service{
+  padding: 50px 70px;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.2);
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+}
+
+.one img{
+     width: 100%;
+     height: 300px;
+}
+.two img{
+  width: 100%;
+  height: 300px;
+}
+.three img{
+  width: 100%;
+  height: 300px;
+}
+
+/*Contact*/
+
+
+
+.contact {
+  background:  rgba(0, 0, 0, 0.02);
+  position: relative;
+  height: 92vh;
+}
+.contact-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.contact-content h2 {
+  font-size: 4.5rem;
+  font-weight: 400;
+  color: green;
+  padding-bottom: 0.5rem;
+}
+.contact-content .mail {
+  color: black;
+  padding-bottom: 0.2rem;
+  font-size: 1.5rem;
+}
+.contact-content .links {
+  color: green;
+  padding: 0.5rem;
+  padding-bottom: 1.8rem;
+  font-size: 1.5rem;
+}
+.contact-content a {
+  text-decoration: none;
+  color: blue;
+  padding: 0.5rem;
+  transition: 0.3s ease-in-out;
+  font-size: 1.5rem;
+}
+.contact-content a:hover{
+  color: black;
+}
+
+
+footer{
+  background: #6ab04c;
+  color: white;
+  font-size: 2rem;
+  padding: 0.5rem;
+  font-family: 'Kalam', cursive;
+  text-align: center;
+}
